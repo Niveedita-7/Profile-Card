@@ -1,7 +1,7 @@
 import "./App.css";
 
 // ProfileCard component
-function ProfileCard(props) {
+function ProfileCard({ name, image, description }) {
     return (
         <div className="profile-card">
 
@@ -10,15 +10,15 @@ function ProfileCard(props) {
             </div>
 
             <img
-                src={props.image}
-                alt={props.name}
+                src={image}
+                alt={name}
                 className="profile-image"
             />
 
-            <h2>{props.name}</h2>
+            <h2>{name}</h2>
 
             <p className="description">
-                {props.description}
+                {description}
             </p>
 
             <div className="card-footer">
@@ -28,7 +28,6 @@ function ProfileCard(props) {
         </div>
     );
 }
-
 
 // Main App component
 function App() {
@@ -41,7 +40,7 @@ function App() {
 
             <ProfileCard
                 name="Niveedita"
-                image={`${import.meta.env.BASE_URL}profile.jpg`}
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1IKqAMrfu8LJOm7jSfzRkn53TSIvubbIKOHkcWZmOBA&s=10"
                 description="MCA student who loves technology, data analytics and building cool projects."
             />
 
