@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/FSD-Assignment-4-Profile-Card/',
+  base: '/Profile-Card/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
