@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.main-title {
+    font-size: 22px;
+    color: #d45d79;
+
+    margin-bottom: 30px;
+
+    text-shadow: 4px 4px 0 #493449;
+}
+
+
+/* PROFILE CARD */
+
+.profile-card {
+    width: 360px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #fff3d6;
+
+    border: 6px solid #493449;
+
+    box-shadow:
+        8px 8px 0 #493449,
+        14px 14px 0 #c58aa0;
+}
+
+
+/* CARD HEADER */
+
+.card-header {
+    font-size: 10px;
+
+    color: #d45d79;
+
+    margin-bottom: 20px;
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+
+    object-fit: cover;
+
+    border: 6px solid #493449;
+
+    margin-bottom: 20px;
+}
+
+
+/* NAME */
+
+.profile-card h2 {
+    font-size: 18px;
+
+    color: #493449;
+
+    margin-bottom: 18px;
+}
+
+
+/* DESCRIPTION */
+
+.description {
+    font-size: 9px;
+
+    line-height: 2;
+
+    color: #745267;
+
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+
+.card-footer {
+    padding-top: 15px;
+
+    border-top: 3px dashed #c58aa0;
+
+    font-size: 7px;
+
+    color: #9a7184;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 16px;
+    }
+
+    .profile-card h2 {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 8px;
+    }
+}
